@@ -21,7 +21,7 @@ public class Day2 {
         WebDriver driver=new FirefoxDriver();
 
 
-        driver.navigate().to("http://www.phptravels.net");
+        driver.navigate().to("http://phptravels.net");
         driver.manage().window().maximize();
 
         //Identify element using id
