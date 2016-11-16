@@ -60,7 +60,7 @@ public class Day2 {
         myDynamicElement.click();
 
         //Enter the tour search location as Hongkong
-        myDynamicElement.sendKeys("Hongkong");
+        myDynamicElement.sendKeys("Hong Kong");
 
         //Identifying elements using classname
         //Click on search
@@ -68,12 +68,12 @@ public class Day2 {
 
         //validation of search set
         //Implicit wait implementation
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         String searchTxt=driver.findElement(By.xpath("//*[contains(@class,'captext ellipsis go-right')]")).getText();
 
 
         //Validated the search details
-        Assert.assertEquals(searchTxt,"Hongkong");
+        Assert.assertEquals(searchTxt,"Hong Kong");
 
         driver.close();
         driver.quit();
